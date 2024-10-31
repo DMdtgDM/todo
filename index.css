@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("back.jpg");
+    background-size: contain;
+    background-size: 17px 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+.title {
+    height: 50px;
+    width: 500px;
+    border-radius: 20px;
+    background-image: linear-gradient(90deg, aqua,  #123456);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:snow;
+}
+
+.container {
+    padding: 10px 10px 30px 30px;
+    margin-top: 30px;
+    width: 500px;
+    border-radius: 15px;
+    background-image: linear-gradient(90deg, #123456, aqua);
+    position: relative;
+}
+
+.add, .clear {
+    position: absolute;
+    border: 0.1px solid #123456;
+    font-family: cursive;
+    border-radius: 5px;
+    bottom: 20px;
+    font-weight: 600;
+}
+
+.add {
+    right: 5%;
+}
+
+.clear {
+    right: 15%;
+}
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    font-family: cursive;
+    outline: none;
+    color:aliceblue;
+}
+
+button:hover{
+    transform: scale(1.12);
+}
+
+li {
+    margin-bottom: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    color:aliceblue;
+}
+
+.works {
+    margin-top: 20px;
+}
+
+.mainDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete {
+    margin-right: 15%;
+    font-size: 17px;
+    font-weight: 600;
+    color: red;
+}
+
+.delete:hover {
+    cursor: grab;
+}
+.removed {
+    display: none;
+}
+
+@media (max-width: 630px) {
+    .container {
+        padding: 5px 5px 25px 10px;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        width: 450px;
+    }
+
+    .title {
+        height: 50px;
+        width: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-top: 2px;
+        margin-top: 20px;
+        width:400px;
+    }
+
+    .title {
+        height: 40px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding-top: 2px;
+        margin-top: 20px;
+        width:350px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    input {
+        width: 250px;
+    }
+
+    .title {
+        height: 40px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 365px) {
+    .container {
+        padding-top: 2px;
+        margin-top: 20px;
+        width:300px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    .title {
+        height: 35px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 310px) {
+    .container {
+        padding-top: 2px;
+        margin-top: 20px;
+        width:250px;
+    }
+
+    li {
+        font-size: 13px;
+    }
+
+    input {
+        width: 150px;
+    }
+
+    .title {
+        height: 35px;
+        width: 250px;
+    }
+}
